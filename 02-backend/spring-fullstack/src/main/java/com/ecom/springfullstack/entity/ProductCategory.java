@@ -1,20 +1,32 @@
 package com.ecom.springfullstack.entity;
+import lombok.Getter;
+import lombok.Setter;
 
-import jakarta.persistence.*;
-import lombok.Data;
-
+import javax.persistence.*;
 import java.util.Set;
 
 @Entity
-@Data
-@Table(name = "product_category")
+@Table(name="product_category")
+// @Data -- known bug
+@Getter
+@Setter
 public class ProductCategory {
+
+    @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private Long id;
-    @Column(name ="category_name" )
-    private String category_name;
 
-    @OneToMany(cascade = CascadeType.ALL,mappedBy = "category")
-    private Set<Product> productSet;
+    @Column(name = "category_name")
+    private String categoryName;
+
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "category")
+    private Set<Product> products;
+
 }
+
+
+
+
+
+
