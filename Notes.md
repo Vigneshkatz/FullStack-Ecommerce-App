@@ -1,2 +1,0 @@
-JSON entry and endpoint
-
