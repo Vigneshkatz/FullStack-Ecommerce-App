@@ -1,4 +1,4 @@
-package com.katziio.ecommerce.entity;
+package com.luv2code.ecommerce.entity;
 
 import lombok.Data;
 import org.hibernate.annotations.CreationTimestamp;

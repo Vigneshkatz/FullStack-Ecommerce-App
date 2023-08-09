@@ -1,7 +1,7 @@
-package com.katziio.ecommerce.config;
+package com.luv2code.ecommerce.config;
 
-import com.katziio.ecommerce.entity.Product;
-import com.katziio.ecommerce.entity.ProductCategory;
+import com.luv2code.ecommerce.entity.Product;
+import com.luv2code.ecommerce.entity.ProductCategory;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.rest.core.config.RepositoryRestConfiguration;
 import org.springframework.data.rest.webmvc.config.RepositoryRestConfigurer;
